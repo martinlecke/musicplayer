@@ -1,0 +1,107 @@
+body {
+  color: white;
+  background-size: cover;
+}
+
+.playlist, .player {
+  background-image: linear-gradient(to right, #2f323c , #3f4a58);
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.playlist {
+  display: none;
+  border: 0;
+  overflow: scroll;
+}
+
+.playlist__song {
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.playlist__song--active {
+  background-image: linear-gradient(to bottom right, rgba(255,255,255,0.001), rgba(255, 255, 255, 0.2));
+}
+
+.playlist__songartist, .playlist__songtitle {
+  font-size: 1.4rem;
+  padding: 0;
+  margin:0;
+}
+
+.playlist__songtitle, .player__currently-playing__songtitle {
+  color: rgba(255,255,255,0.5);
+}
+
+.playlist__song__playbutton {
+  font-size: 1.2rem;
+}
+
+.playlist__nav {
+  background-color: rgba(0,0,0,0.15);
+  font-size: 1.2rem;
+}
+
+.player__nav {
+  font-size: 1.2rem;
+}
+
+.player__currently-playing {
+  font-size: 1.4rem;
+}
+
+.height100vh {
+  height: 100vh;
+}
+
+.progress {
+  height: 0.3rem;
+}
+
+.player__buttons {
+  font-size: 0.8rem;
+  text-shadow: 0 0 40px rgba(255,255,255,0.2);
+  text-align: center;
+}
+.player__buttons:hover {
+  cursor: pointer;
+}
+
+.player__button_play {
+  font-size: 3rem;
+}
+
+.player__button_wind {
+  font-size: 2rem;
+}
+
+.player__albumcover {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto 0 auto;
+}
+
+.no-btn {
+  display: block;
+  background:0;
+  border:0;
+  cursor: pointer;
+  color: inherit;
+}
+
+.player__button_pause {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .playlist {
+    display: block;
+    border-right: 6px solid #99a6ad;
+  }
+  .no-btn {
+    display: none;
+  }
+}
