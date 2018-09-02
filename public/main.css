@@ -7,6 +7,7 @@ body {
   background-image: linear-gradient(to right, #2f323c , #3f4a58);
   min-height: 100vh;
   max-height: 100vh;
+  opacity: 0.9;
 }
 
 .playlist {
